@@ -4,7 +4,7 @@ Este projeto apresenta uma solução completa que inclui uma API em Python que t
 
 Além da API, tem um projeto em Asp .NET 9.0 MVC que além de servir esse site, tem jobs configurados através do Quartz.NET para fazer requisições para os endpoints da API para alimentar com dados atualizados o banco de dados em PostgreSQL a cada 5 minutos e para treinar um modelo mais atualizado a cada 15 minutos. Tanto a API em Python, quanto a aplicação do site e os jobs em ASP .NET, quanto o PostgreSQL e o Adminer para consultar os dados gravados estão todos dentro de containers Docker, agrupados com Docker Compose e hospedados em minha VPS, gerenciados com Portainer e usando o Traefik para proxy reverso.
 
-A solução da API está disponível no GitHub do desenvolvedor: [Bitcoin Machine Learning Model](https://github.com/rodrigojager/bitcoin-ml/) e para acessar a API em produção entre em http://rodrigojager.me/bitcoinML e no menu principal escolha API. Você será direcionado a uma página com o Swagger.
+A solução da API está disponível no GitHub do desenvolvedor: [Bitcoin Machine Learning Model](https://github.com/rodrigojager/bitcoin-ml/) e para acessar a API em produção entre em [[http://rodrigojager.me/bitcoinM](https://rodrigojager.com)](https://rodrigojager.com)L e no menu principal escolha API. Você será direcionado a uma página com o Swagger.
 
 #### 1. Introdução
 
