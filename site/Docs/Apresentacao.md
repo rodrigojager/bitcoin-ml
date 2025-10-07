@@ -38,7 +38,7 @@ Visão geral em dois blocos: site (ASP.NET Core 9.0) e API (Python/FastAPI), amb
   - Ingest (a cada 5 min): chama `/ingest` na API Python para buscar candles recentes (Binance) e persistir no Postgres.
   - Train (a cada 15 min): chama `/train` para reentreinar modelos e atualizar métricas.
   - Backfill (uma vez no startup): chama `/init/backfill` para histórico inicial.
-- Charts: consome `/series`, `/metrics`, `/futuros` para exibir velas reais × previstas, erro (%), série prospectiva e métricas direcionais (WDA, etc.).
+- Charts: consome `/series`, `/metrics`, `/futures` para exibir velas reais × previstas, erro (%), série prospectiva e métricas direcionais (WDA, etc.).
 
 5.2 API (Python + FastAPI)
 - Ingestão (`/ingest`): baixa klines (OHLCV) da Binance (janela recente), normaliza e upserta em `btc_candles` (Postgres). Atualiza também a série prospectiva "futuros" para o último timestamp válido.
